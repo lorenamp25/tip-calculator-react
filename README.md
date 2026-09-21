@@ -1,75 +1,103 @@
-# React + TypeScript + Vite
+# 💰 Tip Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive **order and tip calculator** built with **React, TypeScript, Vite and Tailwind CSS**.
 
-Currently, two official plugins are available:
+The application allows users to add products to an order, manage quantities, select a tip percentage and automatically calculate the final amount.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 **Live Demo:**  
+https://fabulous-hummingbird-87b824.netlify.app/
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- Add products to the order
+- Increase product quantities
+- Remove products from the order
+- Select different tip percentages
+- Automatic subtotal calculation
+- Automatic tip calculation
+- Automatic total calculation
+- Responsive interface
+- Reusable React components
+- Custom Hook for order management
+- Optimized derived calculations with `useMemo`
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Technologies
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- HTML5
+- Git & GitHub
+- Netlify
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
 
+## ⚡ React concepts
+
+This project helped me practice and reinforce several React concepts:
+
+- Component-based architecture
+- State management
+- Props
+- Custom Hooks
+- Derived state
+- `useMemo`
+- Conditional rendering
+- Array methods such as `map`, `filter` and `reduce`
+- TypeScript interfaces and types
+
+The order management logic is separated from the UI through a **Custom Hook**, helping keep the components cleaner and the application easier to maintain.
+
+`useMemo` is used for derived calculations such as the subtotal, tip amount and total, avoiding unnecessary recalculations when their dependencies have not changed.
+
+---
+
+## 🚀 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/lorenamp25/tip-calculator-react.git
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+Move into the project:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+cd tip-calculator-react
 ```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## 🌐 Deployment
+
+The application is deployed on **Netlify**.
+
+👉 https://fabulous-hummingbird-87b824.netlify.app/
+
+---
+
+## 👩‍💻 Author
+
+**Lorena**
+
+Frontend Developer focused on building modern and user-friendly web applications with React and TypeScript.
+
+🌐 [Portfolio](https://lorenamp25.github.io/PORTFOLIO/)  
+💻 [GitHub](https://github.com/lorenamp25)
